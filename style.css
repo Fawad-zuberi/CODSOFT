@@ -1,0 +1,509 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Nunito+Sans:opsz,wght@6..12,300&family=Staatliches&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo&family=Lora:ital@1&family=Nunito+Sans:opsz,wght@6..12,300&family=Staatliches&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    
+    font-family: caviar dream,montserrat light,helvetica neue,Helvetica,Arial,sans-serif;
+}
+header .imglogo1 img{
+    width: 200px;
+    margin: 10px 28px;
+    animation: animate101 3s alternate linear infinite;
+    position: relative;
+}
+header .imglogo1 hr{
+    width: 282px;
+    position: absolute;
+    height: 3px;
+    top: 93px;
+    left: 40px; 
+    color: rgb(255, 255, 255);
+    border: 2px solid rgba(224, 185, 13, 0.764);
+    border-radius: 2px;
+}
+nav ul{
+    height: 15vh;
+    display: flex;
+    justify-content:flex-start;
+    align-items: center;
+    margin: 25px 49px;
+}
+nav ul li{
+    list-style: none;
+    padding: 0 12px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+nav ul li:hover{
+    font-weight: bolder;
+}
+
+nav ul li:hover{
+    background-color:rgb(255, 170, 0);
+}
+
+/* Underline affect on navigation */
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: -3px;
+    left: 0;
+    right: -3px;
+    background-color: #d7e7e7;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+.hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+/* ................................ */
+
+
+main{
+    min-height: calc( 100vh - 21.7vh - 237px);
+    background-color:rgb(0, 0, 0);
+}
+
+main .homecont{
+    background-image: linear-gradient(rgb(0, 0, 0),rgba(224, 185, 13, 0.764));
+    min-height: calc( 100vh - 21.7vh - 237px);
+}
+
+.h-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+
+.a{
+    width: 60%;
+    position: relative;
+    top: auto;
+    bottom: auto;
+    right: -222px;
+    transition: all 5s ease-in-out;
+}
+
+.a:hover{
+    transform: rotate(300deg);
+}
+
+.b{
+    width: 38%;
+    position: absolute;
+    top: 204px;
+    left: 920px;
+    transition: all 5s ease-in-out;
+}
+
+.b:hover{
+    transform: rotate(10deg);
+}
+
+.h-1 .content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.h-1 .content .headings{
+    margin: 8px 116px;
+    font-size: large;
+    text-transform: uppercase;
+    font-family: caviar dream,montserrat light,helvetica neue,Helvetica,Arial,sans-serif;
+    letter-spacing: -3px;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: 6px;
+    color: rgb(255, 170, 0);
+}
+
+.h-1 .content .lines{
+    margin: 12px 25px;
+    padding: 0 94px;
+    font-weight: 300;
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    line-height: 2rem;
+    font-family: caviar dream,montserrat light, neue,Helvetica,Arial,sans-serif;
+    color: white;
+}
+
+.h-1 .content .btn1 a{
+    text-transform:uppercase;
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.795);
+    background-color: rgb(255, 170, 0);
+}
+.h-1 .content .btn1{
+    border: 2px solid black;
+    border-radius: 16px;
+    margin: -15px 117px;
+    padding: 8px 19px;
+    background-color: rgb(255, 170, 0);
+}
+
+/* down pepsi bottles and animation on it */
+.thumb{
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.thumb li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+    transition: 0.5s;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 23px;
+    letter-spacing: 3px;
+}
+
+.thumb li:hover{
+    transform: translateY(-15px );
+}
+.thumb li img{
+    max-width: 90px;
+}
+/* 
+............................................. */
+
+main .brands{
+    /* background-color: rgb(0, 0, 0); */
+    min-height: 24.5vh;
+    background-image: linear-gradient(rgba(224, 185, 13, 0.764),black);
+}
+
+main .swipelogos{
+    background-image: linear-gradient(black,white);
+    min-height: 50vh;
+    padding: 75px 0;
+}
+
+.swipelogos h2{
+    text-align: center;
+    color:rgba(224, 185, 13, 0.764);
+    /* font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif; */
+    font-size: 35px;
+    font-weight: initial;
+    text-transform: uppercase;
+    letter-spacing: 19px;
+     font-family: 'Lora', serif;
+     font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+.swipelogos .wrapper{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    overflow: hidden;
+    margin: 30px auto;
+    border-radius: 145px;
+    padding: 2.5rem;
+    width: 881px;
+    background: rgba(255, 255, 255, 0.149);
+    box-shadow: 0 30px 35px rgba(0, 0, 0, 0.026);
+}
+
+.item{
+    animation: animate 25s alternate linear infinite;
+}
+
+.wrapper:hover .item{
+    animation-play-state: paused;
+}
+
+.swipelogos .wrapper .item img{
+    width: 130px;
+    padding: 0 12px;
+}
+
+@keyframes animate{
+    0%{
+       transform: translate3d(0,0,0); 
+    }
+    100%{
+        transform: translate3d(-1100px,0,0); 
+     }
+}
+
+@keyframes animate101{
+    0%{
+       transform: translate3d(0,0,0); 
+    }
+    100%{
+        transform: translate3d(100px,0,0); 
+     }
+}
+
+main .financing{
+    min-height: 100vh;
+    background-image: linear-gradient(white,hsl(237, 48%, 64%));
+}
+
+.financing .c1 h1{    
+    text-align: center;
+    color:rgba(0, 0, 0, 0.764);
+    font-size: 35px;
+    font-weight: initial;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-family: 'Lora', serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-family: 'Staatliches', cursive;
+}
+
+.card nav li{
+    list-style: none;
+}
+
+.c1 .cardcont{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 45px 0;
+}
+
+.card nav{
+    border: 2px solid black;
+    border-radius: 23px;
+    padding: 23px 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.card nav li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 22px 8px;
+    font-family: 'Cairo', sans-serif;
+/* font-family: 'Lora', serif;
+font-family: 'Nunito Sans', sans-serif;
+font-family: 'Staatliches', cursive; */
+}
+
+.box h2{
+    font-weight: 300;
+    font-family: 'Cairo', sans-serif;
+}
+
+.cardcont .card{
+    padding: 13px 19px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 23px 0;
+    transition: all 0.5s ease-in-out;
+}
+
+.cardcont nav{
+    background-image: linear-gradient(white,rgba(0, 0, 0, 0.23));
+    box-shadow: 0 30px 35px rgba(0,0,0.7);
+}
+
+.box hr{
+    width: 262px;
+    margin: 0 auto;
+}
+
+.btnlearn{
+border: 2px solid black;
+border-radius: 23px;
+padding: 3px 25px;
+background-color: hsl(237, 48%, 79%);
+font-family: 'Staatliches', cursive;
+margin: 19px 0 7px;
+}
+
+.btnlearn a{
+    text-decoration: none;
+    color: black;
+}
+.card:hover{
+    transform: translateY(-20px);
+}
+
+main .contactus{
+    min-height: 80vh;
+    background-image: linear-gradient(hsl(237, 48%, 64%),black);
+}
+
+.contactus .head1{
+    margin: 0 auto;
+    color: white;
+    padding: 19px 0;
+}
+
+.contactus .contactusbox{
+    border: 2px solid rgba(245, 245, 245, 0.28);
+    border-radius: 12px;
+    margin: -9px 130px;
+    box-shadow: 0 30px 35px rgba(255, 255, 255, 0.28);
+    min-height: 70vh;
+}
+
+.left nav ul li img{
+    max-width: 60px;
+    padding: 12px 12px;
+}
+
+.left nav ul li {
+    color: white;
+}
+
+.left nav ul{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 86px 0;
+} 
+
+.div-inside{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0 9px;
+}
+.contactus .contactusbox .body{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.5s ease-in-out;
+}
+
+.contactus .contactusbox .body .right{
+    background-color: rgba(242, 218, 218, 0.13);
+    border-radius: 12px;
+    margin: 13px 89px;
+    width: 437px;
+    display: flex;
+    justify-content:flex-start;
+    align-items: flex-start;   
+    font-family: 'Cairo', sans-serif;
+    transition: all 0.5s ease-in-out;
+}
+
+.contactus .contactusbox .body .right:hover{
+    transform: translateY(-15px);
+}
+
+.contactus .contactusbox .body:hover{
+    transform: translateY(-15px);
+}
+
+.inputbox label{
+    color: rgb(240, 240, 240);
+}
+.inputbox{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 11px 25px;
+    width: 346px;
+}
+
+.inputbox button{
+    border: 2px solid black;
+    border-radius: 16px;
+    padding: 4px 39px;
+    margin: 0 auto;
+}
+
+.inputbox textarea{
+    width: 100%;
+    border:2px solid black;
+    border-radius: 16px;
+}
+.inputbox input{
+    width: 100%;
+    border: none;
+    border-bottom:2px solid black;
+    border-radius: 16px;
+}
+/* Footer Css */
+footer{
+    height: 237px;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    display: flex;
+    align-content: center;
+    justify-content: center;
+}
+.container-footer{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+.imglogo img{
+    width: 200px;
+    margin: 0 103px;
+    opacity: 0.3;
+}
+
+.container-footer p{
+    text-align: center;
+}
+
+.container-footer p:hover{
+    font-weight: bolder;
+}
+.my1-padding{
+    padding: 4px 0;
+}
+
+.text-alignpls{
+    text-align: center;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.socials li a img:hover{
+    transform: translateY(-15px );
+}
+.socials li a img{
+    max-width: 55px;
+    margin: -10px 70px;
+    padding: 19PX 30PX;
+}
+/* .................... */
