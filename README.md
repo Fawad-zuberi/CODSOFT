@@ -1,2 +1,2 @@
 # CODSOFT
-Some of the work that i did during my internship at CodSoft
+Task-1 of my internship at CodSoft that was to design a landing page using html css.
